@@ -1,0 +1,65 @@
+:root {
+    --black: #1A1613;
+    --blue: #1F9295;
+    --off-white: #F3EAD8;
+    --yellow: #E3AD43;
+    --red: #C43B39;
+}
+
+* {
+    font-family: "Cascadia Code", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--off-white);
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    justify-content: right;
+    align-items: center;
+    background-color: var(--blue);
+    border-bottom: 1rem solid var(--black);
+    user-select: none;
+
+    font-weight: 700;
+}
+
+.nav a {
+    text-decoration: none;
+    margin-right: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+    display: inline-block;
+
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav a.selected {
+    color: var(--off-white);
+    transform: translateY(-4.75px) scaleY(1.75);
+    text-shadow: 3px 3px 0px var(--red);
+
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav a:hover {
+    color: var(--off-white);
+    transform: translateY(-4.75px) scaleY(1.75);
+    text-shadow: 3px 3px 0px var(--red);
+}
+
+.nav .title {
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: var(--off-white);
+    transform: translateY(-4.75px) scaleY(1.75);
+    text-shadow: 3px 3px 0px var(--red);
+    display: inline-block;
+}
